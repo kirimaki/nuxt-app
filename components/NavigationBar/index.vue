@@ -1,6 +1,6 @@
 <template>
     <v-app-bar :elevation="4">
-        <v-app-bar-nav-icon/>
+        <v-app-bar-nav-icon to="/" />
         <v-app-bar-title>JY</v-app-bar-title>
         <template v-slot:append>
             <v-btn icon="mdi-heart" to="/join"></v-btn>
@@ -35,10 +35,11 @@
 </template>
 
 <script setup>
-    const items = ref( [
+    const items = ref([
         { text: 'Todo', icon: 'mdi-calendar-edit', to: '/todo'},
         { text: '내 정보', icon: 'mdi-account' },
         { text: '로그아웃', icon: 'mdi-logout' },
+        { text: '책 리스트', icon: 'mdi-book', to: '/book' },
       ]);
 </script>
 
